@@ -2,14 +2,20 @@
 @import "_reset.scss";
 @import "_responsive.scss";
 
-$jaugesWidth: 175px;
+$gaugesWidth: 175px;
 $ledSize: 25px;
 
+// Colors: 
+$warning : #FF9900;
+
 body {
-     background-color: #aaa;
+     background-color: #fff;
+     background-image: url("../img/alu-wall.jpg");
+     background-position: fixed;
+     background-size: cover;
+     background-repeat: no-repeat;
 
      header {
-          background-color: #888;
           height: 100px;
           text-align: center;
           margin-bottom: 50px;
@@ -31,15 +37,24 @@ body {
                padding: 30px 5px;
 
                h2 {
-                    margin-bottom: 50px;
                     font-size: 40px;
+                    color: $warning;
+                    border: 3px solid black;
+                    border-radius: 10px;
+                    width: 60%;
+                    margin: 0 auto 50px auto;
+                    padding: 10px;
+                    background-image: url("../img/alu-wall.jpg");
+                    text-shadow: 2px 2px 2px black;
+
                }
 
-               figure.main-jauges {
-                    border: 5px solid black;
-                    width: $jaugesWidth;
-                    height: $jaugesWidth;
-                    border-radius: $jaugesWidth;
+               figure.main-gauges {
+                    border: 3px solid black;
+                    box-shadow: 5px 5px 5px black;
+                    width: $gaugesWidth;
+                    height: $gaugesWidth;
+                    border-radius: $gaugesWidth;
                     margin: 10px auto;
                }
 
@@ -66,9 +81,18 @@ body {
                               width: $ledSize;
                               height: $ledSize;
                               border-radius: $ledSize;
-                              background: rgb(0,255,12);
-                              background: radial-gradient(circle, rgba(0,255,12,1) 0%, rgba(7,136,29,1) 100%);
                               border: 2px solid silver;
+                              box-shadow: 5px 5px 5px black;
+                         }
+
+                         .led-green {
+                              background: rgb(0,255,12);
+                              background: radial-gradient(circle, rgba(0,255,12,1) 20%, rgba(7,136,29,1) 100%);
+                         }
+
+                         .led-red {
+                              background: rgb(255,0,0);
+                              background: radial-gradient(circle, rgba(255,0,0,1) 20%, rgba(136,7,7,1) 100%);
                          }
 
                          button {
@@ -76,6 +100,7 @@ body {
                               padding: 8px 16px;
                               border-radius: 10px;
                               background-color: silver;
+                              box-shadow: 5px 5px 5px black;
 
                               font-weight: bold;
                               font-size: 20px;
@@ -87,6 +112,11 @@ body {
                     
                }
 
+          }
+          section#left {
+               #powerRange {
+                    margin-top: 30px;
+               }
           }
      }
 }

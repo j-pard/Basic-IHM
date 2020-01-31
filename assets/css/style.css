@@ -37,10 +37,13 @@ body {
 
 /*# sourceMappingURL=style.css.map */
 body {
-  background-color: #aaa;
+  background-color: #fff;
+  background-image: url("../img/alu-wall.jpg");
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body header {
-  background-color: #888;
   height: 100px;
   text-align: center;
   margin-bottom: 50px;
@@ -59,11 +62,19 @@ body main section {
   padding: 30px 5px;
 }
 body main section h2 {
-  margin-bottom: 50px;
   font-size: 40px;
+  color: #FF9900;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto 50px auto;
+  padding: 10px;
+  background-image: url("../img/alu-wall.jpg");
+  text-shadow: 2px 2px 2px black;
 }
-body main section figure.main-jauges {
-  border: 5px solid black;
+body main section figure.main-gauges {
+  border: 3px solid black;
+  box-shadow: 5px 5px 5px black;
   width: 175px;
   height: 175px;
   border-radius: 175px;
@@ -87,17 +98,28 @@ body main section .controls .passives .leds {
   width: 25px;
   height: 25px;
   border-radius: 25px;
-  background: #00ff0c;
-  background: radial-gradient(circle, #00ff0c 0%, #07881d 100%);
   border: 2px solid silver;
+  box-shadow: 5px 5px 5px black;
+}
+body main section .controls .passives .led-green {
+  background: #00ff0c;
+  background: radial-gradient(circle, #00ff0c 20%, #07881d 100%);
+}
+body main section .controls .passives .led-red {
+  background: red;
+  background: radial-gradient(circle, red 20%, #880707 100%);
 }
 body main section .controls .passives button {
   width: max-content;
   padding: 8px 16px;
   border-radius: 10px;
   background-color: silver;
+  box-shadow: 5px 5px 5px black;
   font-weight: bold;
   font-size: 20px;
+}
+body main section#left #powerRange {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,13 +17,18 @@
 
       <main class="flex-row-wrap">
             <section id="left">
-
+                  <h2>Power</h2>
+                  <figure class="main-gauges flex-col-center" id="powergauge">
+                        This is a gauge !
+                  </figure>
+                  <div class="leds" id="powerLed"></div>
+                  <progress id="powerRange" max="100" value="70"></progress>
             </section>
 
             <section id="Center">
                   <h2>Voltage</h2>
-                  <figure class="main-jauges flex-col-center">
-                        This is a jauge !
+                  <figure class="main-gauges flex-col-center" id="volatagegauges">
+                        This is a gauge !
                   </figure>
                   <div class="controls flex-row-wrap">
                         <div class="utilities">
@@ -33,15 +38,31 @@
                               <input type="range" min="0" max="400" step="10" value="280" class="slideVertical" id="inputVoltage">
                         </div>
                         <div class="passives flex-col-around">
-                              <div class="leds"></div>
-                              <button>Auto</button>
+                              <div class="leds led-green" id="voltageLed"></div>
+                              <button id="autoVoltage">Auto</button>
                         </div>
                   </div>
                   <progress id="volateRange" max="100" value="70"></progress>
             </section>
 
             <section id="Right">
-
+                  <h2>Intensity</h2>
+                  <figure class="main-gauges flex-col-center" id="intensitygauge">
+                        This is a gauge !
+                  </figure>
+                  <div class="controls flex-row-wrap">
+                        <div class="utilities">
+                              
+                        </div>
+                        <div class="actives flex-row-center">
+                              <input type="range" min="0" max="400" step="10" value="280" class="slideVertical" id="inputIntensity">
+                        </div>
+                        <div class="passives flex-col-around">
+                              <div class="leds led-red" id="intensityLed"></div>
+                              <button id="autoIntensity">Auto</button>
+                        </div>
+                  </div>
+                  <progress id="intensityRange" max="100" value="70"></progress>
             </section>
       </main>
 </body>
