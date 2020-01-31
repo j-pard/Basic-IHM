@@ -38,10 +38,6 @@ body {
 /*# sourceMappingURL=style.css.map */
 body {
   background-color: #fff;
-  background-image: url("../img/alu-wall.jpg");
-  background-position: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 body header {
   height: 100px;
@@ -50,6 +46,10 @@ body header {
 }
 body header h1 {
   font-size: 50px;
+  color: #444;
+}
+body header h1 i {
+  color: orange;
 }
 body main {
   width: 100%;
@@ -63,22 +63,22 @@ body main section {
 }
 body main section h2 {
   font-size: 40px;
-  color: #FF9900;
-  border: 3px solid black;
+  color: aqua;
   border-radius: 10px;
   width: 60%;
   margin: 0 auto 50px auto;
   padding: 10px;
-  background-image: url("../img/alu-wall.jpg");
   text-shadow: 2px 2px 2px black;
 }
 body main section figure.main-gauges {
-  border: 3px solid black;
+  border: 2px solid silver;
   box-shadow: 5px 5px 5px black;
   width: 175px;
   height: 175px;
   border-radius: 175px;
   margin: 10px auto;
+  font-size: 20px;
+  font-weight: bold;
 }
 body main section .controls {
   width: 100%;
@@ -99,15 +99,13 @@ body main section .controls .passives .leds {
   height: 25px;
   border-radius: 25px;
   border: 2px solid silver;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 3px 3px 3px black;
+  background: white;
+  background: radial-gradient(circle, white 30%, #444444 100%);
 }
-body main section .controls .passives .led-green {
-  background: #00ff0c;
-  background: radial-gradient(circle, #00ff0c 20%, #07881d 100%);
-}
-body main section .controls .passives .led-red {
-  background: red;
-  background: radial-gradient(circle, red 20%, #880707 100%);
+body main section .controls .passives .led-on {
+  background: #00f9ff;
+  background: radial-gradient(circle, #00f9ff 30%, #0045ff 100%);
 }
 body main section .controls .passives button {
   width: max-content;
@@ -115,8 +113,11 @@ body main section .controls .passives button {
   border-radius: 10px;
   background-color: silver;
   box-shadow: 5px 5px 5px black;
-  font-weight: bold;
   font-size: 20px;
+  color: black;
+}
+body main section progress {
+  box-shadow: 3px 3px 3px silver;
 }
 body main section#left #powerRange {
   margin-top: 30px;
