@@ -1,6 +1,92 @@
+@import "flex.scss";
 @import "_reset.scss";
 @import "_responsive.scss";
 
+$jaugesWidth: 175px;
+$ledSize: 25px;
+
 body {
-      
+     background-color: #aaa;
+
+     header {
+          background-color: #888;
+          height: 100px;
+          text-align: center;
+          margin-bottom: 50px;
+
+          h1 {
+               font-size: 50px;
+          }
+     }
+
+     main {
+          width: 100%;
+          justify-content: space-around;
+
+          section {
+               width: 30%;
+               min-width: 300px;
+               text-align: center;
+
+               padding: 30px 5px;
+
+               h2 {
+                    margin-bottom: 50px;
+                    font-size: 40px;
+               }
+
+               figure.main-jauges {
+                    border: 5px solid black;
+                    width: $jaugesWidth;
+                    height: $jaugesWidth;
+                    border-radius: $jaugesWidth;
+                    margin: 10px auto;
+               }
+
+               .controls {
+                    width: 100%;
+                    justify-content: space-around;
+                    margin: 50px 0;
+                    div {
+                         width: 30%;
+                         height: 150px;
+                         text-align: center;
+                    }
+
+                    .actives {
+                         input.slideVertical {
+                              transform: rotate(-90deg);
+                              margin: 50px 0;
+                         }
+                    }
+
+                    .passives {
+
+                         .leds {
+                              width: $ledSize;
+                              height: $ledSize;
+                              border-radius: $ledSize;
+                              background: rgb(0,255,12);
+                              background: radial-gradient(circle, rgba(0,255,12,1) 0%, rgba(7,136,29,1) 100%);
+                              border: 2px solid silver;
+                         }
+
+                         button {
+                              width: max-content;
+                              padding: 8px 16px;
+                              border-radius: 10px;
+                              background-color: silver;
+
+                              font-weight: bold;
+                              font-size: 20px;
+                         }
+                    }
+               }
+
+               progress {
+                    
+               }
+
+          }
+     }
 }

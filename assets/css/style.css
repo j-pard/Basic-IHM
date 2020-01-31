@@ -1,12 +1,103 @@
+.flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-col-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
-  outline: none; }
+  outline: none;
+  box-sizing: border-box;
+}
 
 body {
   overflow-x: hidden;
-  width: 100%; }
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
+body {
+  background-color: #aaa;
+}
+body header {
+  background-color: #888;
+  height: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+body header h1 {
+  font-size: 50px;
+}
+body main {
+  width: 100%;
+  justify-content: space-around;
+}
+body main section {
+  width: 30%;
+  min-width: 300px;
+  text-align: center;
+  padding: 30px 5px;
+}
+body main section h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+body main section figure.main-jauges {
+  border: 5px solid black;
+  width: 175px;
+  height: 175px;
+  border-radius: 175px;
+  margin: 10px auto;
+}
+body main section .controls {
+  width: 100%;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+body main section .controls div {
+  width: 30%;
+  height: 150px;
+  text-align: center;
+}
+body main section .controls .actives input.slideVertical {
+  transform: rotate(-90deg);
+  margin: 50px 0;
+}
+body main section .controls .passives .leds {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background: #00ff0c;
+  background: radial-gradient(circle, #00ff0c 0%, #07881d 100%);
+  border: 2px solid silver;
+}
+body main section .controls .passives button {
+  width: max-content;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: silver;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */

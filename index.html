@@ -8,9 +8,41 @@
       <meta name="author" content="Jonathan Pardons">
       <meta name="author" content="Lloyd Colart">
       <meta name="organization" content="BeCode">
-      <title>Basic IHM</title>
+      <title>Basic IHM - HPG Survey</title>
 </head>
 <body>
-      
+      <header class="flex-col-center">
+            <h1>High Power Generator</h1>
+      </header>
+
+      <main class="flex-row-wrap">
+            <section id="left">
+
+            </section>
+
+            <section id="Center">
+                  <h2>Voltage</h2>
+                  <figure class="main-jauges flex-col-center">
+                        This is a jauge !
+                  </figure>
+                  <div class="controls flex-row-wrap">
+                        <div class="utilities">
+                              
+                        </div>
+                        <div class="actives flex-row-center">
+                              <input type="range" min="0" max="400" step="10" value="280" class="slideVertical" id="inputVoltage">
+                        </div>
+                        <div class="passives flex-col-around">
+                              <div class="leds"></div>
+                              <button>Auto</button>
+                        </div>
+                  </div>
+                  <progress id="volateRange" max="100" value="70"></progress>
+            </section>
+
+            <section id="Right">
+
+            </section>
+      </main>
 </body>
 </html>
